@@ -9,7 +9,7 @@ import Input from '../Input/Input';
 
 import './Chat.css';
 
-const ENDPOINT = 'http://c89b9f7eb38a.ngrok.io/chat';
+const ENDPOINT = 'https://c89b9f7eb38a.ngrok.io/chat';
 
 let socket;
 

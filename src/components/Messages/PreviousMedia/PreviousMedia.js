@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import "./PreviousMedia.css";
 
 const PreviousMedia = ({ results, setResults, sendMedia }) => {
-    console.log(results);
   const [index, setIndex] = useState(0);
   const changeActual = (event) => {
     event.preventDefault();
@@ -13,12 +12,9 @@ const PreviousMedia = ({ results, setResults, sendMedia }) => {
     event.preventDefault();
     setResults([])
   }
-  console.log(index);
   if (results.length>0) {
-    console.log(index);
     const trimmedName = "admin";
     const actual = results[index];
-    console.log(actual);
     if ((actual.type === "gif")) {
       return (
         <div className="messageContainer justifyEnd">

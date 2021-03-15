@@ -57,6 +57,7 @@ const Message = ({ message: { text, user, currentDate }, name }) => {
               <div className="gitItem messageBox backgroundLight">
               <img src={text.images.downsized.url} />
               </div>
+              <p className="sentText pl-10 ">{user}</p>
             </div>
             <div className="messageDate">Sent: {currentDate}</div>
             </div>
